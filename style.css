@@ -250,3 +250,31 @@ body{
     }
 }
 
+/*Right hand box*/
+.dark-box {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    right: 15%;
+    top: 23%;
+    transform: translateY(-50%);
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: slide-in 2.5s ease-out forwards;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
